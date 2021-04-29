@@ -1,0 +1,33 @@
+{
+  "name": "Monterey County Sites",
+  "sites": [
+    {
+      "name": "Monterey County Home Page",
+      "link": "http://www.co.monterey.ca.us/"
+    },
+    {
+      "name": "Monterey County Superior Court",
+      "link": "https://www.monterey.courts.ca.gov"
+    },
+    {
+      "name": "Monterey County Department of Social Services",
+      "link": "http://mcdss.co.monterey.ca.us"
+    },
+    {
+      "name": "Area Agency on Aging",
+      "link": "http://www.co.monterey.ca.us/aaa/"
+    },
+    {
+      "name": "Monterey College of Law",
+      "link": "http://www.montereylaw.edu/"
+    },
+    {
+      "name": "Monterey County Bar Association",
+      "link": "http://montereycountybar.org/"
+    },
+    {
+      "name": "California Advocates for Nursing Home Reform",
+      "link": "http://canhr.org/"
+    }
+  ]
+}

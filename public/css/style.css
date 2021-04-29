@@ -8,16 +8,39 @@ nav a{
     font-size: x-large;
 }
 
+div#donate {
+    height: 3rem;
+    line-height: 2.25rem;
+    text-align: center;
+    border-color: black;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 0% 2%;
+    background-color: white;
+}
+
+div#donate a{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+#banner{
+    background-color: #5E3232;
+    color: white;
+}
+
 #logo{
     width: 200px;
 }
 
-h1, h2, h3, h4, h5, h6, nav{
+nav{
     font-family: 'Oswald', sans-serif;
 }
 
-body{
+body main, h1, h2, h3, h4, h5, h6{
     font-family: 'Lexend', sans-serif;
+    font-size: 1.25rem;
 }
 
 footer img{
@@ -26,4 +49,8 @@ footer img{
 
 #disclaimer{
     width: 50%;
+}
+
+form.links{
+    width: 95%;
 }

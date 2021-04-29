@@ -1,0 +1,29 @@
+{
+  "name": "California Sites",
+  "sites": [
+    {
+      "name": "California State Home Page",
+      "link": "https://www.ca.gov"
+    },
+    {
+      "name": "California Courts Site",
+      "link": "https://www.courts.ca.gov"
+    },
+    {
+      "name": "California Department of Social Services",
+      "link": "https://www.cdss.ca.gov"
+    },
+    {
+      "name": "California Department of Consumer Affairs",
+      "link": "https://www.dca.ca.gov"
+    },
+    {
+      "name": "California Department of Real Estate",
+      "link": "https://dre.ca.gov"
+    },
+    {
+      "name": "California Contractor's Licensing Board",
+      "link": "https://www.cslb.ca.gov"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Federal Sites",
+  "sites": [
+    {
+      "name": "Social Security Administration",
+      "link": "https://www.ssa.gov"
+    },
+    {
+      "name": "Medicare",
+      "link": "https://www.medicare.gov"
+    },
+    {
+      "name": "Housing and Urban Development (HUD)",
+      "link": "https://www.hud.gov"
+    }
+  ]
+}
