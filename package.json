@@ -1,7 +1,10 @@
 {
+  "name": "lss-web-design-final",
+  "description": "Website redesign of Legal Services for Seniors",
+  "version": "1.0.0",
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "webpack -p"
+    "heroku-postbuild": "ng build --prod"
   },
   "dependencies": {
     "ejs": "^3.1.6",
