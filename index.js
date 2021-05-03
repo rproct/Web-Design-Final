@@ -1,31 +1,34 @@
 const express = require('express')
+const path = require('path')
+const port = process.env.PORT || 8080
 
 const app = express()
 
 app.set("view engine", "ejs")
-app.use(express.static("public"))
+app.use(express.static(__dirname))
+app.use(express.static(__dirname + "public"))
 app.use(express.urlencoded({extended: true}))
 
 app.get("/", (req, res) => {
-    res.render("index")
+    res.render(path.resolve(__dirname, "views/index"))
 })
 
 app.get("/services", (req, res) => {
-    res.render("services")
+    res.render(path.resolve(__dirname, "views/services"))
 })
 
 app.get("/resources", (req, res) => {
-    let fed = require("./Dropdown_Links/fed.json")
-    let cal = require("./Dropdown_Links/cal.json")
-    let monte = require("./Dropdown_Links/monte.json")
-    res.render("resources", {"fed": fed, "cal": cal, "monte": monte})
+    let fed = require(__dirname + "/Dropdown_Links/fed.json")
+    let cal = require(__dirname + "/Dropdown_Links/cal.json")
+    let monte = require(__dirname + "/Dropdown_Links/monte.json")
+    res.render(path.resolve(__dirname, "views/resources"), {"fed": fed, "cal": cal, "monte": monte})
 })
 
 app.get("/contact", (req, res) => {
-    res.render("contact")
+    res.render(path.resolve(__dirname, "views/contact"))
 })
 
 //http://localhost:3000
-app.listen(3000, () => {
-    console.log("Express is running...")
+app.listen(port, () => {
+    console.log(`Express is running on Port: ${port}...`)
 })
