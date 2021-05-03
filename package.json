@@ -3,8 +3,7 @@
   "description": "Website redesign of Legal Services for Seniors",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js",
-    "heroku-postbuild": "ng build --prod"
+    "start": "node index.js"
   },
   "dependencies": {
     "ejs": "^3.1.6",
