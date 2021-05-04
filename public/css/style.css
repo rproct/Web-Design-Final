@@ -8,6 +8,24 @@ nav a{
     font-size: x-large;
 }
 
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #638eb0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
 div#donate {
     height: 3rem;
     line-height: 2.25rem;
@@ -38,9 +56,44 @@ nav{
     font-family: 'Oswald', sans-serif;
 }
 
-body main, h1, h2, h3, h4, h5, h6{
+body main{
     font-family: 'Lexend', sans-serif;
     font-size: 1.5rem;
+    /*Regular Size: 1rem*/
+}
+
+body h1{
+    font-size: 3.75rem;
+    /*Regular Size: 2.5rem*/
+}
+
+body h2{
+    font-size: 3rem;
+    /*Regular Size: 2rem*/
+}
+
+body h3{
+    font-size: 2.625rem;
+    /*Regular Size: 1.75rem*/
+}
+
+body h4{
+    font-size: 2.25rem;
+    /*Regular Size: 1.5rem*/
+}
+
+body h5{
+    font-size: 1.875rem;
+    /*Regular Size: 1.25rem*/
+}
+
+body h6{
+    font-size: 1.5rem;
+    /*Regular Size: 1rem*/
+}
+
+img#event{
+    height: fit-content;
 }
 
 footer img{
@@ -53,4 +106,12 @@ footer img{
 
 form.links{
     width: 95%;
+}
+
+#google_translate_element{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: #749fc1;
+    border-top-left-radius: 30px;
 }
