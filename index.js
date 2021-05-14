@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+const fetch = require("node-fetch")
 const port = process.env.PORT || 8080
 
 const app = express()
@@ -36,8 +37,24 @@ app.get("/events", (req, res) => {
     res.render(path.resolve(__dirname, "views/events"))
 })
 
+app.get("/calendar", async (req, res) => {
+    let month = req.query.month
+    let year = req.query.year
+    let events = req.query.events
+    let url = `https://free-calendar.herokuapp.com/date?month=${month}&year=${year}`
+    for(let i = 0; i < events.length; i++)
+        url += `&events[]=${events[i]}`
+    fetch(url)
+        .then(res => res.text())
+        .then(text => res.render("calendar", {"calendar": text}));
+})
+
 app.get("/contact", (req, res) => {
     res.render(path.resolve(__dirname, "views/contact"))
+})
+
+app.get("/donate", (req, res) => {
+    res.render("donate")
 })
 
 //http://localhost:3000

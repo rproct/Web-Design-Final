@@ -14,16 +14,19 @@ nav a{
     display: inline-block;
 }
 
-.dropdown-content{
+.dpdn-content{
     display: none;
     position: absolute;
+    left: 50% !important;
+    right: auto!important;
     background-color: #638eb0;
     border-radius: 10px;
     box-shadow: 10px 10px 12px;
+    transform: translate(-50%, 0)!important;
     z-index: 3;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dpdn-content{
     display: block;
 }
 
@@ -53,8 +56,8 @@ nav, #display{
 }
 
 #display{
-    padding: 6% 0%;
-    font-size: 6.75rem;
+    padding: 3% 0%;
+    font-size: 9.75rem;
     font-weight: bold;
     color: ghostwhite;
     text-shadow: black 5px 5px 10px;
@@ -107,6 +110,26 @@ nav, #display{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+#donatePanel{
+    background-image: url("/public/img/donate.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+#black-box{
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 3rem;
+}
+
+.donateBtn{
+    width: 11rem;
 }
 
 body main{
@@ -174,4 +197,22 @@ form.links{
 
 div#eventInfo{
     width: 600px;
+}
+
+.day {
+    width: 15rem!important;
+    height: 10rem!important;
+}
+
+div#calendar {
+    width: 100rem;
+}
+
+.columns{
+    column-count: 2;
+}
+
+.btn{
+    background-color: #638eb0!important;
+    border-color: #638eb0!important;
 }
