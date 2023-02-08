@@ -1,0 +1,26 @@
+---
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/style.css";
+
+interface Props {
+    title: string;
+}
+
+const {title} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <Head />
+  </head>
+  <body>
+    <Header title={title}/>
+    <main class="my-5 container mx-auto">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

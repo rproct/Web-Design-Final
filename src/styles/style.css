@@ -1,3 +1,4 @@
+@import url(/node_modules/bootstrap/dist/css/bootstrap.css);
 nav{
     background-color: #749fc1;
     z-index: 1!important;
@@ -64,56 +65,56 @@ nav, #display{
 }
 
 #home{
-    background-image: url("/public/img/home.jpg");
+    background-image: url("/img/home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #about{
-    background-image: url("/public/img/about.jpg");
+    background-image: url("/img/about.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #contact{
-    background-image: url("/public/img/contact.jpg");
+    background-image: url("/img/contact.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #events{
-    background-image: url("/public/img/events.jpg");
+    background-image: url("/img/events.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #outreach{
-    background-image: url("/public/img/outreach.jpg");
+    background-image: url("/img/outreach.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #resources{
-    background-image: url("/public/img/resources.jpg");
+    background-image: url("/img/resources.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #services{
-    background-image: url("/public/img/services.jpg");
+    background-image: url("/img/services.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #donatePanel{
-    background-image: url("/public/img/donate.png");
+    background-image: url("/img/donate.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -123,7 +124,7 @@ nav, #display{
 }
 
 #black-box{
-    width: fit-content;
+    @apply w-fit;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0 3rem;
 }

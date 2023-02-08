@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ResourceDropdown from "../../components/ResourceDropdown.astro";
+import fed from '../../data/Dropdown_Links/fed.json';
+import cal from '../../data/Dropdown_Links/cal.json';
+import monte from '../../data/Dropdown_Links/monte.json'
+
+const title = "Resources";
+---
+
+<BaseLayout title={title}>
+    <div class="d-flex justify-content-between">
+        <ResourceDropdown json={fed}/>
+        <ResourceDropdown json={cal}/>
+        <ResourceDropdown json={monte}/>
+    </div>
+</BaseLayout>
